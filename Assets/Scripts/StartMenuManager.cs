@@ -16,6 +16,8 @@ public class StartMenuManager : MonoBehaviour
     {
         startGamePanel.SetActive(true);
         levelSelectPanel.SetActive(false);
+        level2Button.interactable = false; 
+        level3Button.interactable = false;
 
         int highestLevel = PlayerPrefs.GetInt("HighestLevel", 1); 
         if (highestLevel >= 2) {
